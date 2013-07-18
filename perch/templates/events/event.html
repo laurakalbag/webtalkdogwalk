@@ -1,0 +1,16 @@
+<div class="vevent">
+	<h2>
+		<span class="summary">
+			<perch:events id="eventTitle" />
+		</span> 
+		on 
+		<time class="month dtstart" datetime="<perch:events id="eventDateTime" format="c">">
+			<perch:events id="eventDateTime" format="jS F Y" /> at <perch:events id="eventDateTime" format="Ga" />
+		</time>
+	</h2>
+	<h3 class="location"><perch:events id="eventLocation" label="Location"/></h3>
+	<div class="description"><perch:events id="eventDescHTML" type="textarea" textile="true" editor="markitup" encode="false" /></div>
+	<div class="map">
+		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<perch:events id="eventMap" label="Map"/>"></iframe>
+	</div>
+</div>

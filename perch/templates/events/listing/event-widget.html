@@ -1,0 +1,17 @@
+<div class="widget vevent event">
+	<time class="year" datetime="<perch:events id="eventDateTime" format="d" />">
+        <a class="value-title" title="<perch:events id="eventDateTime" format="d" href="<perch:events id="eventURL" />">
+            <perch:events id="eventDateTime" format="d" />
+        </a>
+    </time>
+    <time class="month dtstart" datetime="<perch:events id="eventDateTime" format="F y" />">
+        <span class="value-title" title="<perch:events id="eventDateTime" format="F y" />">
+            <perch:events id="eventDateTime" format="F 'y" />
+        </span>
+    </time>
+    <p class="location summary">
+        <a href="<perch:events id="eventURL" />">
+            <perch:events id="eventTitle" /> - <perch:events id="eventLocation" label="Location"/>
+        </a>
+    </p>
+</div>

@@ -1,0 +1,18 @@
+<perch:before>
+    <li>
+        <h3><span class="day"><perch:events id="eventDateTime" format="l, jS F Y" /></span></h3>
+        <ul>
+</perch:before>
+            
+            <li class="vevent">
+                <span class="time dtstart"><span class="value-title" title="<perch:events id="eventDateTime" format="c" />"><perch:events id="eventDateTime" format="%l:%M %p" /></span> - </span>
+                <span class="event summary <perch:events id="category_slugs" />"><a href="<perch:events id="eventURL" />"><perch:events id="eventTitle" /></a></span>
+                <div class="description">
+                    <perch:events id="eventDescHTML" encode="false" />
+                </div>
+            </li>
+
+<perch:after>            
+        </ul>
+    </li>
+</perch:after>
