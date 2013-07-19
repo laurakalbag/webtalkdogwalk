@@ -21,7 +21,7 @@
 	border: $unit/10 solid $grey-mid-light;
 	border-radius: $unit;
 	@include centre-layout;
-	padding: $unit*2;
+	padding: $unit $unit*2 $unit*2 $unit*2;
 }
 
 .site-footer {
