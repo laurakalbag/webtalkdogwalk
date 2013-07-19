@@ -14,7 +14,8 @@
 <body>
 	<?php perch_layout('global/header'); ?>
 	<div class="main">
-			<div class="content">
+		<a class="logo" href="index.php"><img src="images/web-talk-dog-walk.png" alt=""/></a>
+		<div class="content">
 			<h2><?php perch_content('Past Walks page title'); ?></h2>
 			<div class="past-walks walks">
 			<?php 
