@@ -3,17 +3,28 @@
 	padding: $unit $unit $unit*8 $unit;
 }
 
+.header-wrap {
+	@include centre-layout;
+}
+
 .main {
 	background: $green-mid;
 	padding: $unit $unit 0 $unit;
 }
 
+.logo {
+	@include centre-layout;
+}
+
 .content {
 	background: $grey-light;
 	border: $unit/10 solid $grey-mid-light;
+	border-radius: $unit;
+	@include centre-layout;
 	padding: $unit*2 $unit*2 $unit*4 $unit*2;
 }
 
 .site-footer {
+	@include centre-layout;
 	padding: $unit*2 $unit*2 $unit*4 $unit*2;
 }
