@@ -3,17 +3,35 @@ body {
 	color: $grey-dark;
 
 	font-family: "Adelle Sans", Helvetica, Arial, sans-serif;
+	font-size: $unit * 1.5;
+	line-height: $unit * 2.5;
 }
 
 h1,
 h1 a {
 	color: $green-bright;
+	font-size: $unit * 2.4;
+	margin: $unit 0 $unit * 2 0;
 }
 
 h2 {
 	color: $green-dark;
+	font-size: $unit * 1.8;
+	margin: $unit 0 $unit * 2 0;
 }
 
 a {
 	color: $green-mid-dark;
+}
+
+p {
+	margin-bottom: $unit;
+}
+
+ul, ol {
+	margin: 0 0 $unit * 2 $unit * 2
+}
+
+li {
+	margin-bottom: $unit;
 }
