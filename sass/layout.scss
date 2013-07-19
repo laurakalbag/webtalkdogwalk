@@ -4,12 +4,12 @@
 
 .main {
 	background: $green-mid;
-	border: $unit/10 solid $grey-mid-light;
 	padding: $unit $unit 0 $unit;
 }
 
 .content {
 	background: $grey-light;
+	border: $unit/10 solid $grey-mid-light;
 	padding: $unit*2 $unit*2 $unit*4 $unit*2;
 }
 
