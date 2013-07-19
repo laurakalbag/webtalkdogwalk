@@ -20,8 +20,8 @@
 	<div class="main">
 		<a class="logo" href="../index.php"><img src="images/web-talk-dog-walk.png" alt=""/></a>
 		<div class="content">
-			<aside class="next-walk widgets">
-				<div class="widget">
+			<aside class="widgets">
+				<div class="widget next-walk">
 					<?php 
 						$opts = array(
 						    'filter'=>'eventDateTime',
@@ -49,7 +49,7 @@
 						perch_events_custom($opts);
 					?>
 				</div>
-				<div class="widget">
+				<div class="widget lead-by">
 					<h3>Lead by</h3>
 					<p><?php perch_content('Lead by'); ?></p>
 					<?php perch_content('Lead by photo'); ?>

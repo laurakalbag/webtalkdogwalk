@@ -1,0 +1,91 @@
+.widgets {
+	border-top: $unit/10 solid $grey-mid-light;
+	border-bottom: $unit/10 solid $grey-mid-light;
+	margin-bottom: $unit*2;
+	padding-bottom: $unit*2;
+	position: relative;
+}
+
+.next-walk {
+
+	.date {
+		background: $white;
+		border: $unit/10 solid $grey-mid;
+		border-top-width: 0;
+		border-bottom-width: $unit;
+		margin-bottom: $unit;
+		max-width: $unit*12;
+		position: relative;
+
+		.day {
+			font-size: $unit*7.2;
+			line-height: $unit*10;
+
+			a {
+				color: $grey-dark;
+				display: block;
+				font-weight: bold;
+				margin-top: $unit*2.5;
+				position: absolute;
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		.month {
+			background: $red;
+			display: block;
+			color: $white;
+			margin-bottom: $unit*9;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+
+	.location {
+		margin-bottom: $unit*2;
+	}
+
+	@media only screen and (min-width: $unit*30) {
+		float: left;
+	}
+}
+
+.forecast {
+	.forecast-weather {
+		background: url('../images/weather.png') 0 0 no-repeat;
+		@include hide;
+		padding-top: $unit*9;
+		margin-bottom: $unit;
+		min-width: $unit*9;
+
+		&.snow {
+			background-position: 0 -110px;
+		}
+
+		&.cloudy {
+			background-position: 0 -220px;
+		}
+
+		&.rainy {
+			background-position: 0 -335px;
+		}
+
+		&.sunny {
+			background-position: 0 -440px;
+		}
+	}
+
+	@media only screen and (min-width: $unit*30) {
+		right: 0;
+		position: absolute;
+	}
+}
+
+.lead-by {
+	border-top: $unit/10 solid $grey-mid-light;
+
+	@media only screen and (min-width: $unit*30) {
+		clear: both;
+	}
+}

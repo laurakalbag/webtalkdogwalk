@@ -17,8 +17,8 @@
 		<a class="logo" href="index.php"><img src="images/web-talk-dog-walk.png" alt=""/></a>
 		<div class="content">
 			<h2><?php perch_content('Intro'); ?></h2>
-			<aside class="next-walk widgets">
-				<div class="widget">
+			<aside class="widgets">
+				<div class="widget next-walk">
 					<h3>Next walk</h3>
 					<?php 
 						$opts = array(
@@ -32,12 +32,12 @@
 						perch_events_custom($opts);
 					?>
 				</div>
-				<div class="widget">
+				<div class="widget forecast">
 					<h3>Forecast</h3>
 					<p class="forecast-weather <?php perch_content('Forecast weather slug'); ?>"><?php perch_content('Forecast weather'); ?></p>
 					<p>for 24th July</p>
 				</div>
-				<div class="widget">
+				<div class="widget lead-by">
 					<h3>Lead by</h3>
 					<p><?php perch_content('Lead by'); ?></p>
 					<?php perch_content('Lead by photo'); ?>
