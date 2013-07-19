@@ -1,3 +1,27 @@
 .site-title {
 	@include hide;
 }
+
+.site-navigation {
+	float: right;
+	overflow: hidden;
+
+	ul {
+		margin-left: 0;
+
+		li {
+			float: left;
+			list-style-type: none;
+			
+			 a {
+				display: block;
+				float: left;
+				line-height: $unit*3;
+				margin-left: $unit;
+				padding: 0 $unit;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+	}	
+}
