@@ -22,6 +22,12 @@
 	border-radius: $unit;
 	@include centre-layout;
 	padding: $unit $unit*2 $unit*2 $unit*2;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+	}
 }
 
 .site-footer {
