@@ -5,6 +5,10 @@
 		font-size: $unit*2.4;
 		margin: 0 $unit;
 		text-transform: uppercase;
+		
+		@media only screen and (min-width: $unit*53) {
+			margin-top: $unit*1.5;
+		}
 	}
 }
 
@@ -24,6 +28,13 @@
 		li {
 			float: left;
 			list-style-type: none;
+
+			&.selected {
+				a {
+					background: $green-dark;
+					color: $grey-light;
+				}
+			}
 			
 			 a {
 			 	background: $green-mid;
@@ -36,6 +47,11 @@
 				padding: $unit/2 $unit 0 $unit; /* tweaked to make text sit in vertical middle of button */
 				text-decoration: none;
 				text-transform: uppercase;
+
+				&:hover, &:active {
+					background: $green-bright;
+					color: $green-dark;
+				}
 			}
 		}
 	}	
