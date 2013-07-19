@@ -34,7 +34,7 @@
 				</div>
 				<div class="widget">
 					<h3>Forecast</h3>
-					<p class="forecast">Some sun</p>
+					<p class="forecast-weather <?php perch_content('Forecast weather slug'); ?>"><?php perch_content('Forecast weather'); ?></p>
 					<p>for 24th July</p>
 				</div>
 				<div class="widget">
