@@ -1,9 +1,21 @@
+.site-header {
+	h2 {
+		color: $green-bright;
+		float: left;
+		font-size: $unit*2.4;
+		margin: 0 $unit;
+		text-transform: uppercase;
+	}
+}
+
 .site-title {
 	@include hide;
 }
 
 .site-navigation {
 	float: right;
+	padding-top: $unit;
+	padding-right: $unit;
 	overflow: hidden;
 
 	ul {
@@ -14,11 +26,14 @@
 			list-style-type: none;
 			
 			 a {
+			 	background: $green-mid;
+			 	border-radius: $unit;
+			 	color: $green-light;
 				display: block;
 				float: left;
-				line-height: $unit*3;
+				line-height: $unit*2.4; /* tweaked to make text sit in vertical middle of button */
 				margin-left: $unit;
-				padding: 0 $unit;
+				padding: $unit/2 $unit 0 $unit; /* tweaked to make text sit in vertical middle of button */
 				text-decoration: none;
 				text-transform: uppercase;
 			}
