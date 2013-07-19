@@ -1,6 +1,5 @@
 .site-header {
 	background: url('../images/grass-dark.png') bottom left repeat-x;
-
 	z-index: 1;
 }
 
@@ -43,5 +42,17 @@
 		left: 0;
 		width: 100%;
 		z-index: 3;
+	}
+}
+
+.content {
+	ul {
+		margin-left: 0;
+
+		li {
+			background: url('../images/bone.png') 0 0 no-repeat;
+			list-style-type: none;
+			padding-left: $unit*3;
+		}
 	}
 }
