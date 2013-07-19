@@ -9,7 +9,7 @@
 
 .main {
 	background: $green-mid;
-	padding: $unit $unit 0 $unit;
+	padding: $unit;
 }
 
 .logo {
@@ -21,10 +21,15 @@
 	border: $unit/10 solid $grey-mid-light;
 	border-radius: $unit;
 	@include centre-layout;
-	padding: $unit*2 $unit*2 $unit*4 $unit*2;
+	padding: $unit*2;
 }
 
 .site-footer {
 	@include centre-layout;
-	padding: $unit*2 $unit*2 $unit*4 $unit*2;
+	padding: $unit*2 $unit*2 $unit*2 $unit*2;
+
+	img {
+		float: right;
+		margin: 0 0 $unit $unit;
+	}
 }
