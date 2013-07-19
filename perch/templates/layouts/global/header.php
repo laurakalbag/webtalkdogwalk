@@ -1,7 +1,9 @@
 <header class="site-header">
-	<h1 class="site-title"><a href="index.php">Web talk dog walk</a></h1>
-	<h2><?php perch_content('Location'); ?></h2>
-	<nav class="site-navigation">
-		<?php perch_pages_navigation(); ?>
-	</nav>
+	<div class="header-wrap please-dont-hate-me">
+		<h1 class="site-title"><a href="index.php">Web talk dog walk</a></h1>
+		<h2><?php perch_content('Location'); ?></h2>
+		<nav class="site-navigation">
+			<?php perch_pages_navigation(); ?>
+		</nav>
+	</div>
 </header>
