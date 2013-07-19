@@ -1,0 +1,17 @@
+.site-header {
+	padding: $unit $unit $unit*6 $unit;
+}
+
+.main {
+	background: $green-mid;
+	padding: $unit $unit 0 $unit;
+}
+
+.content {
+	background: $grey-light;
+	padding: $unit*2 $unit*2 $unit*4 $unit*2;
+}
+
+.site-footer {
+	padding: $unit*2 $unit*2 $unit*4 $unit*2;
+}

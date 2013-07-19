@@ -1,0 +1,47 @@
+.site-header {
+	background: url('../images/grass-dark.png') bottom left repeat-x;
+
+	z-index: 1;
+}
+
+.logo {
+	display: block;
+	margin-top: -$unit*4;
+	margin-bottom: $unit*2;
+	max-width: $unit*70;
+	position: relative;
+	width: 100%;
+	z-index: 4;
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+.main {
+	overflow: visible;
+	position: relative;
+	&:before {
+		background: url('../images/grass-mid.png') 0 0 repeat-x;
+		content: "";
+		display: block;
+		height: $unit*9.3;
+		position: absolute;
+		top: -$unit*7.3;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+	}
+	&:after {
+		background: url('../images/grass-light.png') 0 0 repeat-x;
+		content: "";
+		display: block;
+		height: $unit*9.3;
+		position: absolute;
+		top: -$unit*5.3;
+		left: 0;
+		width: 100%;
+		z-index: 3;
+	}
+}
