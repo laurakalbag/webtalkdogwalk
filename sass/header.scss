@@ -1,6 +1,6 @@
 .site-header {
 	h2 {
-		color: $green-bright;
+		color: $green-mid-light;
 		float: left;
 		font-size: $unit*2.4;
 		margin: 0 $unit;
@@ -51,6 +51,12 @@
 				&:hover, &:active {
 					background: $green-bright;
 					color: $green-dark;
+				}
+
+				@media only screen and (min-width: $unit*70) {
+					margin-left: $unit*2;
+					padding-right: $unit*1.5;
+					padding-left: $unit*1.5;	
 				}
 			}
 		}
