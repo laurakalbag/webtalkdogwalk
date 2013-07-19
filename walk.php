@@ -18,49 +18,51 @@
 <body>
 	<?php perch_layout('global/header'); ?>
 	<div class="main">
-		<aside class="next-walk">
-			<div class="widget">
-				<?php 
-					$opts = array(
-					    'filter'=>'eventDateTime',
-					    'count'=>1,
-					    'match'=>'gte',
-					    'value'=> date('Y-m-d'),
-					    'template'=>'events/listing/event-widget.html'
-					);
+		<div class="content">
+			<aside class="next-walk">
+				<div class="widget">
+					<?php 
+						$opts = array(
+						    'filter'=>'eventDateTime',
+						    'count'=>1,
+						    'match'=>'gte',
+						    'value'=> date('Y-m-d'),
+						    'template'=>'events/listing/event-widget.html'
+						);
 
-					perch_events_custom($opts);
-				?>
-			</div>
-			<div class="widget forecast">
-				<h3>Forecast</h3>
-				<p class="forecast-weather <?php perch_content('Forecast weather slug'); ?>"><?php perch_content('Forecast weather'); ?></p>
-				<?php 
-					$opts = array(
-					    'filter'=>'eventDateTime',
-					    'count'=>1,
-					    'match'=>'gte',
-					    'value'=> date('Y-m-d'),
-					    'template'=>'events/date.html'
-					);
+						perch_events_custom($opts);
+					?>
+				</div>
+				<div class="widget forecast">
+					<h3>Forecast</h3>
+					<p class="forecast-weather <?php perch_content('Forecast weather slug'); ?>"><?php perch_content('Forecast weather'); ?></p>
+					<?php 
+						$opts = array(
+						    'filter'=>'eventDateTime',
+						    'count'=>1,
+						    'match'=>'gte',
+						    'value'=> date('Y-m-d'),
+						    'template'=>'events/date.html'
+						);
 
-					perch_events_custom($opts);
-				?>
-			</div>
-			<div class="widget">
-				<h3>Lead by</h3>
-				<p><?php perch_content('Lead by'); ?></p>
-				<?php perch_content('Lead by photo'); ?>
-			</div>
-		</aside>
-		<?php 		
-			perch_events_custom(array(
-				'filter'=>'eventSlug',
-				'match'=>'eq',
-				'value'=>perch_get('event'),
-				'template'=>'events/event.html'
-			));
-		?>	
+						perch_events_custom($opts);
+					?>
+				</div>
+				<div class="widget">
+					<h3>Lead by</h3>
+					<p><?php perch_content('Lead by'); ?></p>
+					<?php perch_content('Lead by photo'); ?>
+				</div>
+			</aside>
+			<?php 		
+				perch_events_custom(array(
+					'filter'=>'eventSlug',
+					'match'=>'eq',
+					'value'=>perch_get('event'),
+					'template'=>'events/event.html'
+				));
+			?>	
+		</div>
 	</div>
 	<?php perch_layout('global/footer'); ?>
 </body>

@@ -14,18 +14,20 @@
 <body>
 	<?php perch_layout('global/header'); ?>
 	<div class="main">
-		<h2><?php perch_content('Past Walks page title'); ?></h2>
-		<div class="past-walks walks">
-		<?php 
-			$opts = array(
-			    'filter'=>'eventDateTime',
-			    'match'=>'lt',
-			    'value'=> date('Y-m-d'),
-			    'template'=>'events/listing/event-day.html'
-			);
+			<div class="content">
+			<h2><?php perch_content('Past Walks page title'); ?></h2>
+			<div class="past-walks walks">
+			<?php 
+				$opts = array(
+				    'filter'=>'eventDateTime',
+				    'match'=>'lt',
+				    'value'=> date('Y-m-d'),
+				    'template'=>'events/listing/event-day.html'
+				);
 
-			perch_events_custom($opts);
-		?>
+				perch_events_custom($opts);
+			?>
+			</div>
 		</div>
 	</div>
 	<?php perch_layout('global/footer'); ?>
