@@ -16,7 +16,7 @@
 	<div class="main">
 		<a class="logo" href="index.php"><img src="images/web-talk-dog-walk.png" alt=""/></a>
 		<div class="content">
-			<h2><?php perch_content('Intro'); ?></h2>
+			<h2 class="page-intro"><?php perch_content('Intro'); ?></h2>
 			<aside class="widgets">
 				<div class="widget next-walk">
 					<h3>Next walk</h3>
