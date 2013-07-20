@@ -1,0 +1,9 @@
+/* Mozilla based browsers */
+::-moz-selection {
+    background-color: $green-light;
+}
+
+/* Works in Safari */
+::selection {
+    background-color: $green-light;
+}
