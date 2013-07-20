@@ -28,6 +28,16 @@
 
 				perch_events_custom($opts);
 			?>
+			<?php 
+				$opts = array(
+				    'filter'=>'eventDateTime',
+				    'match'=>'lt',
+				    'value'=> date('Y-m-d'),
+				    'template'=>'events/listing/event-day.html'
+				);
+
+				perch_events_custom($opts);
+			?>
 			</div>
 		</div>
 	</div>

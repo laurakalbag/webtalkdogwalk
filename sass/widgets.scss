@@ -14,14 +14,13 @@
 		border-bottom: none;
 		border-left: $unit/10 solid $grey-mid;
 		float: right;
-		margin-top: -$unit*5;
+		margin-top: -$unit*8.5;
 		margin-left: $unit*4;
 		max-width: $unit*18;
 	}
 }
 
-.next-walk {
-
+.event {
 	.date {
 		background: $white;
 		border: $unit/10 solid $grey-mid;
@@ -69,6 +68,9 @@
 			width: 100%;
 		}
 	}
+}
+
+.next-walk {
 
 	@media only screen and (min-width: $unit*30) {
 		float: left;

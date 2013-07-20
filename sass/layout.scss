@@ -22,6 +22,7 @@
 	border-radius: $unit;
 	@include centre-layout;
 	max-width: $unit*64;
+	overflow: hidden;
 	padding: $unit $unit*2 $unit*2 $unit*2;
 
 	img {
@@ -32,6 +33,60 @@
 
 	@media only screen and (min-width: $unit*70) {
 		padding: $unit $unit*2 $unit*2 $unit*3;
+
+		.page-intro {
+			width: $unit*43;
+		}
+	}
+}
+
+.walks {
+	.event {
+		border-bottom: $unit/10 solid $grey-mid;
+		margin: 0 auto $unit*2 auto;
+		max-width: $unit*28;
+
+		.date {
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.location {
+			text-align: center;
+		}
+
+		@media only screen and (min-width: $unit*50) {
+			float: left;
+			max-width: none;
+			width: 50%;
+
+			.location {
+				margin-right: $unit*2;
+				margin-left: $unit*2;
+				position: relative;
+				width: auto;
+			}
+
+			&:nth-of-type(2n) {
+				@include border-box;
+				border-left: $unit/10 solid $grey-mid;
+			}
+		}
+
+		@media only screen and (min-width: $unit*50) {
+			width: 33.33%;
+
+			&:nth-of-type(2n) {
+				border-right: none;
+				border-left: none;
+			}
+
+			&:nth-of-type(3n-1) {
+				@include border-box;
+				border-right: $unit/10 solid $grey-mid;
+				border-left: $unit/10 solid $grey-mid;
+			}
+		}
 	}
 }
 

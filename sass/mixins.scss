@@ -10,3 +10,9 @@
 	margin-right: auto;
 	max-width: $unit*70;
 }
+
+@mixin border-box {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
