@@ -20,7 +20,7 @@
 	<div class="main">
 		<a class="logo" href="../index.php"><img src="images/web-talk-dog-walk.png" alt=""/></a>
 		<div class="content">
-			<aside class="widgets">
+			<aside class="widgets walk">
 				<div class="widget next-walk">
 					<?php 
 						$opts = array(

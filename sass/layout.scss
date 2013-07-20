@@ -90,6 +90,17 @@
 	}
 }
 
+body .walk {
+	margin-top: 0;
+	padding-top: $unit*2.5;
+}
+
+.map iframe {
+	height: $unit*30;
+	max-width: $unit*41.5;
+	width: 100%;
+}
+
 .site-footer {
 	@include centre-layout;
 	padding: $unit*2 $unit*2 $unit*2 $unit*2;
