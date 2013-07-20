@@ -3,6 +3,10 @@
 	z-index: 1;
 }
 
+	.svg .site-header {
+		background: url('../images/grass-dark.svg') bottom left repeat-x;
+	}
+
 .logo {
 	display: block;
 	margin-top: -$unit*4;
@@ -45,6 +49,15 @@
 	}
 }
 
+	.svg .main {
+		&:before {
+			background: url('../images/grass-mid.svg') 0 0 repeat-x;
+		}
+		&:after {
+			background: url('../images/grass-light.svg') 0 0 repeat-x;
+		}
+	}
+
 .content {
 	ul {
 		margin-left: 0;
@@ -56,3 +69,12 @@
 		}
 	}
 }
+
+	.content {
+		ul {
+
+			li {
+				background: url('../images/bone.svg') 0 0 no-repeat;
+			}
+		}
+	}

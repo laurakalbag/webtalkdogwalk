@@ -62,3 +62,13 @@
 		}
 	}	
 }
+
+.svg .logo {
+	background: url('../images/web-talk-dog-walk.svg') 0 0 no-repeat;
+	background-size: 100% 99%;
+
+	img {
+		position: relative;
+		top: -$unit*50;
+	}
+}

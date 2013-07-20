@@ -138,6 +138,28 @@
 	}
 }
 
+.svg .forecast {
+	.forecast-weather {
+		background: url('../images/weather.svg') 0 0 no-repeat;
+
+		&.snow {
+			background-position: 0 -110px;
+		}
+
+		&.cloudy {
+			background-position: 0 -220px;
+		}
+
+		&.rainy {
+			background-position: 0 -335px;
+		}
+
+		&.sunny {
+			background-position: 0 -440px;
+		}
+	}
+}
+
 .lead-by {
 	border-top: $unit/10 solid $grey-mid;
 
