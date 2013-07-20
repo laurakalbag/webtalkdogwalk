@@ -63,6 +63,7 @@
 			.location {
 				margin-right: $unit*2;
 				margin-left: $unit*2;
+				padding-right: 0;
 				position: relative;
 				width: auto;
 			}
@@ -92,7 +93,23 @@
 
 body .walk {
 	margin-top: 0;
-	padding-top: $unit*2.5;
+	padding-top: $unit*1.5;
+	border-top: none;
+
+	@media only screen and (min-width: $unit*70) {
+		margin-top: $unit*2.5;
+		padding-top: 0;
+	}
+
+	.forecast {
+		h3 {
+			margin-top: 0;
+
+			@media only screen and (min-width: $unit*70) {
+				margin-top: $unit*2;
+			}
+		}
+	}
 }
 
 .map iframe {
