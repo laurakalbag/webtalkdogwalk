@@ -1,9 +1,23 @@
 .widgets {
-	border-top: $unit/10 solid $grey-mid-light;
-	border-bottom: $unit/10 solid $grey-mid-light;
+	border-top: $unit/10 solid $grey-mid;
+	border-bottom: $unit/10 solid $grey-mid;
 	margin-bottom: $unit*2;
 	padding-bottom: $unit*2;
 	position: relative;
+
+	@media only screen and (min-width: $unit*50) {
+		overflow: hidden;
+	}
+
+	@media only screen and (min-width: $unit*70) {
+		border-top: none;
+		border-bottom: none;
+		border-left: $unit/10 solid $grey-mid;
+		float: right;
+		margin-top: -$unit*5;
+		margin-left: $unit*4;
+		max-width: $unit*18;
+	}
 }
 
 .next-walk {
@@ -44,10 +58,36 @@
 
 	.location {
 		margin-bottom: $unit*2;
+
+		@media only screen and (min-width: $unit*50) {
+			position: absolute;
+			width: 195%;
+		}
+
+		@media only screen and (min-width: $unit*70) {
+			position: relative;
+			width: 100%;
+		}
 	}
 
 	@media only screen and (min-width: $unit*30) {
 		float: left;
+	}
+
+	@media only screen and (min-width: $unit*50) {
+		position: relative;
+		width: 33.33%;
+	}
+
+	@media only screen and (min-width: $unit*70) {
+		border-bottom: $unit/10 solid $grey-mid;
+		clear: both;
+		padding: 0 $unit 0 $unit*3;
+		width: auto;
+
+		h3 {
+			margin-top: $unit;
+		}
 	}
 }
 
@@ -80,12 +120,44 @@
 		right: 0;
 		position: absolute;
 	}
+
+	@media only screen and (min-width: $unit*50) {
+		float: left;
+		right: auto;
+		position: relative;
+		width: 33.33%;
+	}
+
+	@media only screen and (min-width: $unit*70) {
+		border-bottom: $unit/10 solid $grey-mid;
+		clear: both;
+		padding: 0 $unit 0 $unit*3;
+		width: 100%;
+	}
 }
 
 .lead-by {
-	border-top: $unit/10 solid $grey-mid-light;
+	border-top: $unit/10 solid $grey-mid;
 
 	@media only screen and (min-width: $unit*30) {
 		clear: both;
+	}
+
+	@media only screen and (min-width: $unit*50) {
+		border-top: none;
+		clear: none;
+		float: left;
+		width: 33.33%;
+
+		img {
+			float: left;
+			max-width: $unit*12;
+		}
+	}
+
+	@media only screen and (min-width: $unit*70) {
+		clear: both;
+		padding: 0 $unit 0 $unit*3;
+		width: auto;
 	}
 }
