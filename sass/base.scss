@@ -15,7 +15,7 @@ h1 a {
 }
 
 h2 {
-	color: $green-dark;
+	color: saturate($green-dark, 100%);
 	font-size: $unit*1.8;
 	line-height: $unit*3;
 	margin: $unit*2 0 $unit*2 0;
