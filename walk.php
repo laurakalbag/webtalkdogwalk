@@ -13,6 +13,7 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
