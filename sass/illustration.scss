@@ -1,11 +1,10 @@
 .site-header {
 	background: url('../images/grass-dark.png') bottom left repeat-x;
 	z-index: 1;
-}
-
-	.svg .site-header {
+	.svg & {
 		background: url('../images/grass-dark.svg') bottom left repeat-x;
 	}
+}
 
 .logo {
 	display: block;
@@ -35,6 +34,9 @@
 		left: 0;
 		width: 100%;
 		z-index: 2;
+		.svg & {
+			background: url('../images/grass-mid.svg') 0 0 repeat-x;
+		}
 	}
 	&:after {
 		background: url('../images/grass-light.png') 0 0 repeat-x;
@@ -46,17 +48,11 @@
 		left: 0;
 		width: 100%;
 		z-index: 3;
-	}
-}
-
-	.svg .main {
-		&:before {
-			background: url('../images/grass-mid.svg') 0 0 repeat-x;
-		}
-		&:after {
+		.svg & {
 			background: url('../images/grass-light.svg') 0 0 repeat-x;
 		}
 	}
+}
 
 .content {
 	ul {
@@ -66,15 +62,10 @@
 			background: url('../images/bone.png') 0 0 no-repeat;
 			list-style-type: none;
 			padding-left: $unit*3;
-		}
-	}
-}
 
-	.content {
-		ul {
-
-			li {
+			.svg & {
 				background: url('../images/bone.svg') 0 0 no-repeat;
 			}
 		}
 	}
+}
