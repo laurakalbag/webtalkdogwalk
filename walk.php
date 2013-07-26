@@ -19,7 +19,7 @@
 <body>
 	<?php perch_layout('global/header'); ?>
 	<div class="main">
-		<a class="logo" href="../index.php"><img src="images/web-talk-dog-walk.png" alt=""/></a>
+		<a class="logo" href="http://webtalkdogwalk.in/brighton"><img src="images/web-talk-dog-walk.png" alt=""/></a>
 		<div class="content">
 			<aside class="widgets walk">
 				<div class="widget next-walk">
