@@ -36,7 +36,17 @@
 				<div class="widget forecast">
 					<h3>Forecast</h3>
 					<p class="forecast-weather <?php perch_content('Forecast weather slug'); ?>"><?php perch_content('Forecast weather'); ?></p>
-					<p>for 24th July</p>
+					<?php 
+						$opts = array(
+						    'filter'=>'eventDateTime',
+						    'count'=>1,
+						    'match'=>'gte',
+						    'value'=> date('Y-m-d'),
+						    'template'=>'events/date.html'
+						);
+
+						perch_events_custom($opts);
+					?>
 				</div>
 				<div class="widget lead-by">
 					<h3>Lead by</h3>
